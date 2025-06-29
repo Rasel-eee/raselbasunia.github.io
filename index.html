@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Rasel Basunia | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --header-bg: #1e293b;
+      --nav-bg: #0f172a;
+      --card-bg: #ffffff;
+    }
+    [data-theme="dark"] {
+      --bg-color: #0f172a;
+      --text-color: #f4f4f4;
+      --header-bg: #1e293b;
+      --nav-bg: #1e293b;
+      --card-bg: #1e1e2f;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+    header {
+      background-color: var(--header-bg);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      background: var(--nav-bg);
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .project {
+      background: var(--card-bg);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--header-bg);
+      color: white;
+      margin-top: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #2563eb;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem;
+      background: #94a3b8;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header>
+    <h1>Md. Rasel Basunia</h1>
+    <p>Electrical and Electronic Engineer | Enthusiastic about Power Systems & Embedded Tech</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an Electrical and Electronic Engineer passionate about simulation, embedded systems, and IoT. I have experience working with various tools in power system analysis, control systems, and electronic design.</p>
+    <a href="assets/CV-MdRaselBasunia.pdf" class="btn" download>Download CV</a>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>MATLAB & Simulink</li>
+      <li>ETAP & PowerWorld Simulator</li>
+      <li>Arduino, C Programming</li>
+      <li>Python, LaTeX</li>
+      <li>Proteus, AutoCAD Electrical</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="gallery">
+      <div class="project">
+        <h3>Multimachine Power System Stability Analysis</h3>
+        <p>Simulated a multimachine power system using MATLAB Simulink to study rotor angle stability.</p>
+      </div>
+      <div class="project">
+        <h3>IoT-based Smart Agriculture Monitoring</h3>
+        <p>Built a smart agriculture system using Arduino, soil sensors, and Wi-Fi module for remote monitoring.</p>
+      </div>
+      <div class="project">
+        <h3>Radiation-tolerant Supercapacitor Research</h3>
+        <p>Researched MXene-boron composites for energy storage in radiation environments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: rasel.basunia@email.com</p>
+    <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Md. Rasel Basunia | All rights reserved</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.documentElement.toggleAttribute('data-theme', 'dark');
+    }
+  </script>
+</body>
+</html>
